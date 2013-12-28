@@ -1,0 +1,23 @@
+<head>
+  <title>meteor-insert-inside-a-method</title>
+</head>
+
+<body>
+  {{> edit}}
+  {{> hello}}
+</body>
+
+<template name="edit">
+  <input id="data" />
+  <button id="add">Add simple</button>
+  <button id="add_bad">Add bad</button>
+  <button id="add_method">Add via method</button>
+</template>
+
+<template name="hello">
+  <ol>
+  {{#each items}}
+    <li>{{data}}</li>
+  {{/each}}
+  </ol>
+</template>
